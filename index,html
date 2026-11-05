@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEase - Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">StayEase<span>.</span></h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#rooms" class="nav-button">Book Now</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO STAYEASE</p>
+            <h1>Find Your Perfect <span>Stay</span></h1>
+            <p>
+                Discover beautiful hotels, comfortable rooms
+                and unforgettable experiences.
+            </p>
+            <a href="#rooms" class="primary-button">Explore Hotels</a>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <h2>Find Your Stay</h2>
+
+        <form id="searchForm">
+            <div>
+                <label>Destination</label>
+                <input type="text" id="destination"
+                       placeholder="Enter city" required>
+            </div>
+
+            <div>
+                <label>Check-in</label>
+                <input type="date" id="checkin" required>
+            </div>
+
+            <div>
+                <label>Check-out</label>
+                <input type="date" id="checkout" required>
+            </div>
+
+            <div>
+                <label>Guests</label>
+                <select id="guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                </select>
+            </div>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="rooms-section" id="rooms">
+        <h2>Popular Hotels</h2>
+        <p>Discover our handpicked hotels for your next trip.</p>
+
+        <div class="room-container" id="roomContainer"></div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>About StayEase</h2>
+        <p>
+            StayEase helps you discover comfortable hotels
+            and make your travel experience memorable.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <h2>StayEase.</h2>
+        <p>Make every stay special.</p>
+        <p>© 2026 StayEase. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
